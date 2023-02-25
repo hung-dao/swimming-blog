@@ -1,0 +1,51 @@
+@import "home.css";
+@import "navbar.css";
+
+@media(max-width:900px) {
+div.main-container{
+        display: grid;
+        grid-template-areas: 
+        "hd"
+        "sd"
+        "main"
+        "ft";
+    }
+}
+
+.box{
+    border: 1px solid blue;
+    background: yellowgreen;
+}
+
+header{
+    /* row start/column start/row end/column end */
+    grid-area: hd;
+}
+
+footer{
+    grid-area: ft;
+}
+
+div.content{
+    grid-area: main;
+}
+
+div.sidebar{
+    grid-area: sd;
+}
+
+
+@media(min-width:901px) {
+div.main-container{
+        display: grid;
+        grid-template-columns: 250px 200px 1fr 1fr;
+        grid-template-rows: 200px 500px 1fr 1fr;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "sd main main main"
+        "sd main main main"
+        "ft ft ft ft";
+        border: 2px solid red;
+    }
+}
+

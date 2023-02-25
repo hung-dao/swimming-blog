@@ -1,0 +1,10 @@
+@media(max-width:900px) {
+    h1#blog-title, a#sidebar-homepage-link{
+        display: flex;
+        justify-content: center;
+    }
+
+    a#sidebar-homepage-link{
+        margin-bottom: 0.5em;
+    }
+}

@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-with, initial-sclae=1"/>
         <title>My Swimming Blog</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div class="container">
-            <div class="header box">Header</div>
-            <div class="sidebar box">Sidebar</div>
+        <div class="main-container">
+            <header class="box">
+                <h1 id="blog-title">Swimming Blog</h1>
+                <nav>
+                    <ul class="navbar-container">
+                        <li><a href="index.html">Home</li>
+                        <li><a href="#contact">Contact</li>
+                        <li><a href="#about">About</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="sidebar box">
+                <a id="sidebar-homepage-link" href="html/post.html">Most Recent Post</a>
+            </div>
             <div class="content box">Main</div>
-            <div class="footer box">Footer</div>
+            <footer class="box">Footer</footer>
         </div>
     </body>
 </html>
