@@ -1,4 +1,5 @@
 @import "home.css";
+@import "main.css";
 @import "navbar.css";
 
 @media(max-width:900px) {
@@ -9,6 +10,20 @@ div.main-container{
         "sd"
         "main"
         "ft";
+    }
+}
+
+@media(min-width:901px) {
+    div.main-container{
+        display: grid;
+        grid-template-columns: 250px 200px 1fr 1fr;
+        grid-template-rows: 200px 500px 1fr 1fr;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "sd main main main"
+        "sd main main main"
+        "ft ft ft ft";
+        border: 2px solid red;
     }
 }
 
@@ -35,17 +50,5 @@ div.sidebar{
 }
 
 
-@media(min-width:901px) {
-div.main-container{
-        display: grid;
-        grid-template-columns: 250px 200px 1fr 1fr;
-        grid-template-rows: 200px 500px 1fr 1fr;
-        grid-template-areas: 
-        "hd hd hd hd"
-        "sd main main main"
-        "sd main main main"
-        "ft ft ft ft";
-        border: 2px solid red;
-    }
-}
+
 
