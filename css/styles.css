@@ -1,15 +1,31 @@
-@import "home.css";
-@import "main.css";
-@import "navbar.css";
+@import "header.css";
+@import "sidebar.css";
+@import "content.css";
 
-@media(max-width:900px) {
-div.main-container{
+@media(max-width:300px) {
+    div.main-container{
         display: grid;
+        grid-template-rows: 25% 10% 60% 5%;
         grid-template-areas: 
         "hd"
         "sd"
         "main"
         "ft";
+    }
+}
+
+
+@media(min-width:301px) and (max-width:900px) {
+    div.main-container{
+        display: grid;
+        grid-template-columns: 15% 80% 1fr 1fr;
+        grid-template-rows: 15% 10% 65% 10%;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "sd main main main"
+        "sd main main main"
+        "ft ft ft ft";
+        border: 1px solid red;
     }
 }
 

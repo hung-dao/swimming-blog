@@ -1,3 +1,32 @@
+@media(max-width:300px) {
+    div.content{
+        display: grid;
+        grid-template-rows: 30% 70%;
+    }
+
+    div#nested-grid{
+        display: grid;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four";
+    }
+
+    div#one{
+        grid-area: one;
+    }
+    div#two{
+        grid-area: two;
+    }
+    div#three{
+        grid-area: three;
+    }
+    div#four{
+        grid-area: four;
+    }
+}
+
 div.content{
     display: grid;
     grid-template-rows: 20% 80%;

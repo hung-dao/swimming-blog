@@ -1,0 +1,27 @@
+@media(max-width:300px) {
+    div#content-text{
+        display: flex;
+        justify-content: center;
+    }
+
+    h3#content-title{
+        font-size: 14px;
+    }
+}
+
+@media(min-width:301px) and (max-width:900px) {
+    a#sidebar-homepage-link{
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:900px) {
+    h1#blog-title, a#sidebar-homepage-link{
+        display: flex;
+        justify-content: center;
+    }
+
+    a#sidebar-homepage-link{
+        margin-bottom: 0.5em;
+    }
+}
