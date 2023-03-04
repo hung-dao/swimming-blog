@@ -1,6 +1,14 @@
+@media(max-width: 300px) {
+    div#content-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 div#content{
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 22% 78%;
 }
 
 div#nested-grid{
@@ -8,6 +16,13 @@ div#nested-grid{
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     border: 2px solid whitesmoke;
+}
+
+@media(max-width: 900px) {
+    h3#content-title, p#photo-source{
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
 }
 
 div.photo-box{

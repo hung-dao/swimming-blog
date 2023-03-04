@@ -5,12 +5,14 @@
 @media(max-width:300px) {
     div#main-container{
         display: grid;
-        grid-template-rows: 25% 10% 60% 5%;
+        grid-template-rows: 15% 6% 74% 5%;
         grid-template-areas: 
         "hd"
         "sd"
         "main"
         "ft";
+        width: 100vw;
+        height: 100vh;
     }
 }
 
@@ -19,13 +21,15 @@
     div#main-container{
         display: grid;
         grid-template-columns: 15% 80% 1fr 1fr;
-        grid-template-rows: 30% 50% 10% 10%;
+        grid-template-rows: 15% 60% 1fr 1fr;
         grid-template-areas: 
         "hd hd hd hd"
         "sd main main main"
         "sd main main main"
         "ft ft ft ft";
         border: 1px solid red;
+        width: 100vw;
+        height: 100vh;
     }
 }
 

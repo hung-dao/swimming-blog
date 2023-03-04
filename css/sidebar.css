@@ -8,17 +8,3 @@
         font-size: 14px;
     }
 }
-
-@media(min-width:301px) and (max-width:900px) {
-    a#sidebar-homepage-link{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0;
-    }
-}
-
-@media(min-width:900px) {
-    a#sidebar-homepage-link{
-        margin-bottom: 0.5em;
-    }
-}
