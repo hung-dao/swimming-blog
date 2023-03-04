@@ -3,7 +3,7 @@
 @import "content.css";
 
 @media(max-width:300px) {
-    div.main-container{
+    div#main-container{
         display: grid;
         grid-template-rows: 25% 10% 60% 5%;
         grid-template-areas: 
@@ -16,10 +16,10 @@
 
 
 @media(min-width:301px) and (max-width:900px) {
-    div.main-container{
+    div#main-container{
         display: grid;
         grid-template-columns: 15% 80% 1fr 1fr;
-        grid-template-rows: 15% 10% 65% 10%;
+        grid-template-rows: 30% 50% 10% 10%;
         grid-template-areas: 
         "hd hd hd hd"
         "sd main main main"
@@ -30,10 +30,10 @@
 }
 
 @media(min-width:901px) {
-    div.main-container{
+    div#main-container{
         display: grid;
         grid-template-columns: 250px 200px 1fr 1fr;
-        grid-template-rows: 200px 500px 1fr 1fr;
+        grid-template-rows: 130px 500px 1fr 1fr;
         grid-template-areas: 
         "hd hd hd hd"
         "sd main main main"
@@ -49,7 +49,6 @@
 }
 
 header{
-    /* row start/column start/row end/column end */
     grid-area: hd;
 }
 
@@ -57,11 +56,11 @@ footer{
     grid-area: ft;
 }
 
-div.content{
+div#content{
     grid-area: main;
 }
 
-div.sidebar{
+div#sidebar{
     grid-area: sd;
 }
 

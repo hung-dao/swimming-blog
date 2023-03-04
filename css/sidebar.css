@@ -1,5 +1,5 @@
 @media(max-width:300px) {
-    div#content-text{
+    div#content-text, a#sidebar-homepage-link{
         display: flex;
         justify-content: center;
     }
@@ -11,16 +11,13 @@
 
 @media(min-width:301px) and (max-width:900px) {
     a#sidebar-homepage-link{
+        display: flex;
+        justify-content: center;
         margin-bottom: 0;
     }
 }
 
-@media(max-width:900px) {
-    h1#blog-title, a#sidebar-homepage-link{
-        display: flex;
-        justify-content: center;
-    }
-
+@media(min-width:900px) {
     a#sidebar-homepage-link{
         margin-bottom: 0.5em;
     }

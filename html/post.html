@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-with, initial-sclae=1"/>
+        <meta name="viewport" content="width=device-with, initial-scale=1"/>
         <title>My Swimming Journey</title>
         <link rel="stylesheet" href="../css/post.css">
     </head>
     <body>
-        <h2>My Swimming Journey</h2>
-        <figure>
-            <img id="my-swimimg-photo" src="../images/profile-pic.jpg" alt="My swimming photo">
-            <figcaption>My swimming photo.</figcaption>
-        </figure>
+        <div id="post-main-container">
+            <header class="post-box">
+                <h2 id="post-title">My Swimming Journey</h2>
+                <button onclick="window.location.href = '../index.html';">Back to Homepage</button>
+            </header>
+            <div id="post-content" class="post-box">
+                <div id="my-swim-image">
+                    <img id="my-swimmimg-photo" src="../images/profile-pic.jpg" alt="My swimming photo">
+                    <p id="image-caption">A photo of me swimming.</p>
+                </div>     
+                <div id="post-subcontent">
+                    <p id="content-bold" class="text-paragraph">
+                        Donec pellentesque dolor ac lectus ornare pellentesque. Sed nec hendrerit ligula. Aenean metus leo, maximus sit amet mauris in, vulputate semper velit. Pellentesque maximus condimentum dolor sed fermentum. Proin a rutrum arcu, quis rutrum eros. Morbi eget elit vitae erat malesuada maximus at ac tortor. Fusce quis dolor lectus.
+                    </p>    
+                    <p id="content-italic" class="text-paragraph">
+                        Curabitur sed finibus nulla. Sed commodo vestibulum pellentesque. Cras sagittis elementum tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi imperdiet porttitor tincidunt. Fusce fringilla porttitor neque at sagittis. Nullam nulla odio, pellentesque sit amet placerat vitae, pellentesque at erat.
+                    </p>
+                    <p id="content-underline" class="text-paragraph">
+                        Nam a fringilla est. Sed finibus vitae nibh eu tincidunt. Cras ultrices sodales lobortis. Mauris in blandit sapien. Integer gravida dapibus sagittis. Nam imperdiet mauris sit amet orci convallis feugiat quis vitae neque. Aliquam elementum efficitur rhoncus. Ut dapibus vel nunc non eleifend. Quisque mollis tortor velit, a tincidunt nisi placerat eu. Quisque sollicitudin velit a fermentum efficitur.
+                    </p>
+                    <blockquote>
+                        Cras varius ipsum eu orci semper, eu ultrices elit blandit. Aliquam malesuada, purus ac finibus ultrices, tortor lectus rhoncus nunc, quis pulvinar magna est molestie leo. Nulla faucibus cursus enim, a fermentum mauris efficitur ut. Vestibulum efficitur, erat vel suscipit dictum, tortor diam dignissim turpis, vitae consectetur nisi tortor eget purus. 
+                    </blockquote>
+                </div>
+            </div>
+            <div id="post-sidebar" class="post-box">
+                <div class="blog-post-card">
+                    <h3>Example Older Post Title</h3>
+                    <p>On Mar 4 2023</p>
+                    <p>Ut vel pretium purus. Etiam tellus ligula, maximus ut tempus eget, fermentum eu ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>   
+                <div class="blog-post-card">
+                    <h3>Example Older Post Title</h3>
+                    <p>On Mar 4 2023</p>
+                    <p>Ut vel pretium purus. Etiam tellus ligula, maximus ut tempus eget, fermentum eu ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>            
+            </div>
+            <footer class="post-box">&#169; Hung Dao 2023</footer>
+        </div>    
     </body>
 </html>        
