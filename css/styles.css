@@ -14,8 +14,14 @@
         width: 100vw;
         height: 100vh;
     }
-}
 
+    header, div#sidebar, footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media(min-width:301px) and (max-width:900px) {
     div#main-container{
@@ -30,6 +36,13 @@
         border: 1px solid red;
         width: 100vw;
         height: 100vh;
+    }
+
+    header, footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
