@@ -1,17 +1,11 @@
 @media(max-width:370px){
     div#post-main-container{
-        display: grid;
-        grid-template-rows: 6% 68% 22% 1fr;
-        grid-template-areas:
-        "phd"
-        "pmain"
-        "psd"
-        "pft";
         width: 100vw;
+        height: 100vh;
     }
 
     img#my-swimming-photo{
-        max-width: 100%;
+        width: 90%;
         height: auto;
     }
 
@@ -24,6 +18,11 @@
 }
 
 @media(min-width:301px) and (max-width:900px) {
+    div#post-main-container{
+        width: 100vw;
+        height: 100vh;
+    }
+
     header, footer{
         display: flex;
         flex-direction: column;
@@ -36,13 +35,14 @@
     div#post-main-container{
         display: grid;
         grid-template-columns: 40% 8% 1fr 1fr;
-        grid-template-rows: 13% 80% 5% 1fr;
+        grid-template-rows: 6.5% 90.5% 1% 1fr;
         grid-template-areas: 
         "phd phd phd phd"
         "pmain pmain pmain psd"
         "pmain pmain pmain psd"
         "pft pft pft pft";
         border: 2px solid plum;
+        width: 100vw;
     }
 } 
 
@@ -67,7 +67,8 @@ div#post-sidebar{
 }
 
 h2#post-title{
-    margin-bottom: 10px;
+    margin-top: 0.3em;
+    margin-bottom: 0.2em;
 }
 
 .post-box{
@@ -79,12 +80,27 @@ button{
     margin-bottom: 12px;
 }
 
-p#image-caption{
+figcaption#image-caption{
     text-align: center;
 }
 
 p.text-paragraph{
-    margin: 0.7em 0.5em 0.2em;
+    margin: 0.7em 1em 0.2em;
+}
+
+img#avatar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+div#author-info > p{
+    margin: 0.3em 1em 0.2em;
+}
+
+div#social-sharing{
+    margin: 0.5em 1em 0.2em;
 }
 
 p#content-bold{
