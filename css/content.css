@@ -4,6 +4,16 @@
         flex-direction: column;
         align-items: center;
     }
+
+    h3#content-title{
+        font-size: 14px;
+    }
+
+    p#photo-source{
+        text-align: center;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
 }
 
 div#content{
@@ -20,8 +30,8 @@ div#nested-grid{
 
 @media(max-width: 900px) {
     h3#content-title, p#photo-source{
-        margin-top: 7px;
-        margin-bottom: 7px;
+        margin-top: 12px;
+        margin-bottom: 3px;
     }
 }
 
